@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-principal: #22d4fd;
+    --cor-secundario: #f6f6f6cc;
+    --cor-terciario: #000000da;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-terciario);
+    color: var(--cor-secundario);
+    margin: 5%;
+}
+
+/* header */
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+
+.categorias {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-pag {
+    background-color: var(--cor-principal) solid;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    border-radius:20px;
+    color: var(--cor-principal);
+    text-shadow: 1px -1px 1px var(--cor-secundario);
+    font-weight: 600;
+    transition: 1s;
+    
+}
+
+.cabecalho-pag:hover {
+    background-color: var(--cor-secundario);
+    
+}
+
+/* main */
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container_sobre {
+    background-color: #181717e5;
+    width: 65rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    border-radius: 1rem;
+    height: 26rem;
+    margin-bottom: 3rem;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 48px;
+    font-family: 'Krona One', sans-serif;
+    text-shadow: 2px 3px rgba(0, 225, 255, 0.439);
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 1rem;
+}
+
+#text_destaque {
+    font-size: 4.5rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#foto_about {
+     border-radius: 200rem;
+     width: 14rem;
+     position: relative;
+     bottom: 1rem;
+     right: 5rem;
+}
+
+.container_separacao_about {
+    display: flex;
+    gap: 20rem;
+}
+
+
+.botao_about {
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, #22d4fd 0%, #2196f3 100% );
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  position: relative;
+  bottom: 9rem;
+}
+
+.botao_about:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #2196f3;
+    transform: translateY(-0.1em);
+  }
+  
+.botao_about:active {
+    box-shadow: inset 0px 0.1em 0.6em #2196f3;
+    transform: translateY(0em);
+  }
+
+.container_contatos_about {
+    position: relative;
+    bottom: 7rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.container_descricao {
+    background-color: #181717e5;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 64rem;
+    border-radius: 0.5rem;
+}
+
+.container_descricao_about {
+    border-left: 4px solid white;
+}
+
+#titulo_descricao {
+    margin-left: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#texto_about_me {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* Skills */
+
+.container_skills  {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-bottom: 4rem;
+}
+
+.container_icones {
+    display: flex;
+    gap: 3rem;
+}
+
+#icone_js {
+    position: relative;
+    top: 0.4rem;
+}
+
+/* Projetos */
+
+
+
+#titulo_projetos {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#texto_projetos {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.saiba-mais_projetos {
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, #22d4fd 0%, #2196f3 100% );
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.saiba-mais_projetos:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #2196f3;
+    transform: translateY(-0.1em);
+  }
+  
+.saiba-mais_projetos:active {
+    box-shadow: inset 0px 0.1em 0.6em #2196f3;
+    transform: translateY(0em);
+  }
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #181717e5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.juncao_contatos {
+    display: flex;
+    gap: 2rem;
+}
+
+#texto_contatos {
+    position: relative;
+    top: 1.5rem;
+    font-size: 1.2rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+
+
+/* footer */
+
+/* .rodape {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.21);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.botao {
+    background-color: var(--cor-principal);
+    border-radius: 16px;
+    padding: 10px;
+    width: 100px;
+    margin: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.botao:hover {
+    background-color: var(--cor-secundario);
+}
+
+.campo-preenchimento {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.repre-texto {
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+#Newsletter {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 44px;
+    text-align: center;
+    margin: 20px;
+    color: var(--cor-principal);
+    text-shadow: 1px 2px 2px white;
+} */
+
+/* #button-ocultar {
+    background-color: var(--cor-secundario);
+} */
+
+#direitos {
+    text-align: center;
+    font-size: 1rem;
+}
+
+#minha-imagem {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+/* responsividade */
+
+/* Desktop */
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+    .cabecalho {
+        margin-bottom: 3rem;
+    }
+
+    .categorias {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        position: relative;
+        left: 1rem;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    /* header */
+
+    .cabecalho {
+        width: 3rem;
+    }
+
+    .cabecalho-pag {
+        width: 2rem;
+        font-size: 2rem;
+        margin-right: 1.5rem;
+        position: relative;
+        right: 1rem;
+    }
+
+    .cabecalho-pag:hover {
+        width: 8rem;
+    }
+
+    .categorias {
+        position: relative;
+        gap: 1rem;
+        right: 1.4rem;
+        width: 1rem;
+        margin: 1rem;
+    }
+
+    /* main */
+
+    .container_sobre {
+        width: 100%;
+        position: relative;
+        right: 1.3rem;
+        height: 43rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        position: relative;
+        right: 1.2rem;
+        font-size: 1.8rem;
+    }
+
+    #text_destaque {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        position: relative;
+        right: 1.4rem;
+    }
+
+    .container_separacao_about {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .botao_about {
+        
+        bottom: 14rem;
+        font-size: 1.7rem;
+    }
+    
+    .container_contatos_about {
+        left: 3em;
+        bottom: 12rem;
+    }
+    
+    #foto_about {
+        width: 10rem;
+        left: 2.5rem;
+        top: 13rem;
+    }
+
+    /* sobre mim */
+
+    .container_descricao {
+        width: 100%;
+        position: relative;
+        right: 1.8rem;
+    }
+
+    /* Skills */
+
+    .container_skills {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .container_icones {
+        display: flex;
+        gap: 1rem;
+        position: relative;
+    }
+
+    .icones {
+        width: 5rem;
+    }
+
+    /* Projeto */
+
+    #titulo_projetos {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #texto_projetos {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .saiba-mais_projetos {
+        position: relative;
+        left: 9.5rem;
+        font-size: 1.7rem;
+    }
+
+    /* Contato */
+
+    .apresentacao__links {
+        width: 20rem;
+        position: relative;
+        right: 1rem;
+        margin-bottom: 1rem;
+    }
+} 
